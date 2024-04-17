@@ -1,0 +1,35 @@
+{
+  "name": "@tinyyard/oraf",
+  "version": "1.0.0",
+  "description": "it is just requestAnimationFrame",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "browser": "./dist/index.mjs",
+      "bun": "./dist/index.mjs",
+      "deno": "./dist/index.mjs",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/node.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "author": "leejss",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "unbuild": "^2.0.0"
+  }
+}
